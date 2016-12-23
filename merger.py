@@ -73,8 +73,7 @@ def main():
         name_files = glob.glob(os.path.join(config.NAMES_DIR, '*.jpg'))
         name_file = random.choice(name_files)
     merge_images(
-        #random.choice(config.CUPS),
-        config.CUPS[9],
+        random.choice(config.CUPS),
         name_file,
         'test_file.jpg')
 
